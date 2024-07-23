@@ -245,12 +245,10 @@ function preload() {
   font = loadFont("fonts/APL333FAVELA-Thicc.otf");
 }
 
-let tokenID;
-
 const urlParams = new URLSearchParams(window.location.search);
 const blockHash = urlParams.get("prevRandao");
 const urbitID = urlParams.get("urbitId");
-const tokenId = urlParams.get("tokenId");
+const tokenID = urlParams.get("tokenId");
 
 function setup() {
   randomSeed((blockHash % 1000) * tokenID + tokenID * 130);
